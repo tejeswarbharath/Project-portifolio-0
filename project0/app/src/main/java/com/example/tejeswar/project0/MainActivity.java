@@ -16,7 +16,6 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     Button b1,b2,b3,b4,b5,b6;
-    Context context = getApplicationContext();
     int duration = Toast.LENGTH_LONG;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,42 +30,42 @@ public class MainActivity extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast toast = Toast.makeText(context,"This button will launch spotify streamer", duration);
+                Toast toast = Toast.makeText(getApplicationContext(),"This button will launch spotify streamer", duration);
                 toast.show();
             }
         });
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast toast = Toast.makeText(context, "This button will launch scores app", duration);
+                Toast toast = Toast.makeText(getApplicationContext(), "This button will launch scores app", duration);
                 toast.show();
             }
         });
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast toast = Toast.makeText(context,"This button will launch library app", duration);
+                Toast toast = Toast.makeText(getApplicationContext(),"This button will launch library app", duration);
                 toast.show();
             }
         });
         b4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast toast = Toast.makeText(context,"This button will launch build it bigger", duration);
+                Toast toast = Toast.makeText(getApplicationContext(),"This button will launch build it bigger", duration);
                 toast.show();
             }
         });
         b5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast toast = Toast.makeText(context,"This button will launch xyz reader", duration);
+                Toast toast = Toast.makeText(getApplicationContext(),"This button will launch xyz reader", duration);
                 toast.show();
             }
         });
         b6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast toast = Toast.makeText(context,"This button will launch my capstone app", duration);
+                Toast toast = Toast.makeText(getApplicationContext(),"This button will launch my capstone app", duration);
                 toast.show();
             }
         });
